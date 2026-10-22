@@ -1,0 +1,249 @@
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("./fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("./fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #f7f5ef;
+  --surface: #ffffff;
+  --text: #22211e;
+  --muted: #77736b;
+  --gold: #b89952;
+  --gold-light: #d9c58e;
+  --dark: #151515;
+  --border: #e8e2d4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Vazirmatn", Tahoma, sans-serif;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+button,
+input,
+textarea,
+select,
+a {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  width: 100%;
+  min-height: 82px;
+  padding: 18px clamp(20px, 6vw, 84px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--dark);
+  color: #ffffff;
+  border-bottom: 1px solid #423722;
+}
+
+.brand {
+  color: var(--gold-light);
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  white-space: nowrap;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.language-switch button {
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #e9e6df;
+  cursor: pointer;
+  font-size: 13px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.language-switch button:hover,
+.language-switch button[aria-pressed="true"] {
+  color: var(--gold-light);
+  border-color: #6f5a32;
+}
+
+.hero {
+  width: min(100% - 36px, 760px);
+  margin: auto;
+  padding: 76px 0 84px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 0.3px;
+}
+
+#domain-name {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(29px, 6vw, 54px);
+  font-weight: 600;
+  line-height: 1.4;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.gold-line {
+  width: 62px;
+  height: 2px;
+  margin: 27px auto;
+  background: linear-gradient(
+    90deg,
+    var(--gold),
+    var(--gold-light),
+    var(--gold)
+  );
+}
+
+.hero h2 {
+  margin: 0 0 12px;
+  font-size: clamp(21px, 3vw, 28px);
+  font-weight: 700;
+}
+
+.description {
+  max-width: 550px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.contact-card {
+  width: min(100%, 490px);
+  margin: 38px auto 0;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--gold);
+  border-radius: 6px;
+  background: var(--surface);
+  text-align: start;
+  box-shadow: 0 12px 36px rgb(45 37 20 / 4%);
+}
+
+.contact-card h3 {
+  margin: 0 0 16px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact-card p {
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+
+.contact-card a {
+  color: #8a6c2d;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  margin-top: auto;
+  padding: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+body[dir="ltr"] {
+  text-align: left;
+}
+
+body[dir="ltr"] .brand {
+  letter-spacing: 1.8px;
+}
+
+body[dir="rtl"] .contact-card {
+  text-align: right;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
+@media (max-width: 520px) {
+  .site-header {
+    padding: 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding-top: 52px;
+    padding-bottom: 56px;
+  }
+
+  .language-switch {
+    gap: 2px;
+  }
+
+  .contact-card {
+    padding: 19px;
+  }
+}
