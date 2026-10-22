@@ -7,10 +7,10 @@ const translations = {
     title: "این دامنه برای فروش است",
     description: "این نام دامنه برای واگذاری در دسترس است. برای کسب اطلاعات بیشتر با ما تماس بگیرید.",
     contact: "اطلاعات تماس",
-    phoneLabel: "تلفن:",
-    emailLabel: "ایمیل:",
-    whatsappLabel: "واتساپ:",
-    whatsappLink: "تماس از طریق واتساپ",
+    phone-Label: "تلفن:",
+    email-Label: "ایمیل:",
+    whatsapp-Label: "واتساپ:",
+    whatsapp-Link: "تماس از طریق واتساپ",
     footer: "تمام حقوق محفوظ است."
   },
 
@@ -21,10 +21,10 @@ const translations = {
     title: "This Domain Is For Sale",
     description: "This domain name is available for acquisition. Contact us for more information.",
     contact: "Contact Information",
-    phoneLabel: "Phone:",
-    emailLabel: "Email:",
-    whatsappLabel: "WhatsApp:",
-    whatsappLink: "Contact via WhatsApp",
+    phone-Label: "Phone:",
+    email-Label: "Email:",
+    whatsapp-Label: "WhatsApp:",
+    whatsapp-Link: "Contact via WhatsApp",
     footer: "All rights reserved."
   },
 
@@ -35,10 +35,10 @@ const translations = {
     title: "هذا النطاق معروض للبيع",
     description: "اسم النطاق هذا متاح للبيع. يرجى التواصل معنا لمزيد من المعلومات.",
     contact: "معلومات الاتصال",
-    phoneLabel: "الهاتف:",
-    emailLabel: "البريد الإلكتروني:",
-    whatsappLabel: "واتساب:",
-    whatsappLink: "التواصل عبر واتساب",
+    phone-Label: "الهاتف:",
+    email-Label: "البريد الإلكتروني:",
+    whatsapp-Label: "واتساب:",
+    whatsapp-Link: "التواصل عبر واتساب",
     footer: "جميع الحقوق محفوظة."
   }
 };
