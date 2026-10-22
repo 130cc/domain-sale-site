@@ -15,16 +15,18 @@
   font-display: swap;
 }
 
+
 :root {
-  --background: #f7f5ef;
-  --surface: #ffffff;
-  --text: #22211e;
-  --muted: #77736b;
-  --gold: #b89952;
-  --gold-light: #d9c58e;
-  --dark: #151515;
-  --border: #e8e2d4;
+  --background: #0b0b0b;
+  --surface: #151515;
+  --text: #eee9dd;
+  --muted: #b5ad9c;
+  --gold: #c4a35a;
+  --gold-light: #e0ca8c;
+  --dark: #080808;
+  --border: #393124;
 }
+
 
 * {
   box-sizing: border-box;
