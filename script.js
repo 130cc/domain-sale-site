@@ -7,10 +7,10 @@ const translations = {
     title: "این دامنه برای فروش است",
     description: "این نام دامنه برای واگذاری در دسترس است. برای کسب اطلاعات بیشتر با ما تماس بگیرید.",
     contact: "اطلاعات تماس",
-    phone-Label: "تلفن:",
-    email-Label: "ایمیل:",
-    whatsapp-Label: "واتساپ:",
-    whatsapp-Link: "تماس از طریق واتساپ",
+    "phone-label": "تلفن:",
+    "email-label": "ایمیل:",
+    "whatsapp-label": "واتساپ:",
+    "whatsapp-link": "تماس از طریق واتساپ",
     footer: "تمام حقوق محفوظ است."
   },
 
@@ -21,10 +21,10 @@ const translations = {
     title: "This Domain Is For Sale",
     description: "This domain name is available for acquisition. Contact us for more information.",
     contact: "Contact Information",
-    phone-Label: "Phone:",
-    email-Label: "Email:",
-    whatsapp-Label: "WhatsApp:",
-    whatsapp-Link: "Contact via WhatsApp",
+    "phone-label": "Phone:",
+    "email-label": "Email:",
+    "whatsapp-label": "WhatsApp:",
+    "whatsapp-link": "Contact via WhatsApp",
     footer: "All rights reserved."
   },
 
@@ -35,10 +35,10 @@ const translations = {
     title: "هذا النطاق معروض للبيع",
     description: "اسم النطاق هذا متاح للبيع. يرجى التواصل معنا لمزيد من المعلومات.",
     contact: "معلومات الاتصال",
-    phone-Label: "الهاتف:",
-    email-Label: "البريد الإلكتروني:",
-    whatsapp-Label: "واتساب:",
-    whatsapp-Link: "التواصل عبر واتساب",
+    "phone-label": "الهاتف:",
+    "email-label": "البريد الإلكتروني:",
+    "whatsapp-label": "واتساب:",
+    "whatsapp-link": "التواصل عبر واتساب",
     footer: "جميع الحقوق محفوظة."
   }
 };
@@ -106,7 +106,7 @@ function setLanguage(language) {
   try {
     localStorage.setItem("domainSaleLanguage", selectedLanguage);
   } catch {
-    // The site works even if browser storage is unavailable.
+    // Language switching still works without local storage.
   }
 }
 
