@@ -129,7 +129,7 @@ a {
 #domain-name {
   margin: 0;
   overflow-wrap: anywhere;
-  color: var(--dark);
+  color: var(--gold-light);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(29px, 6vw, 54px);
   font-weight: 600;
