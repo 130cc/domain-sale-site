@@ -76,7 +76,7 @@ a {
   gap: 24px;
   background: var(--dark);
   color: #ffffff;
-  border-bottom: 1px solid #423722;
+  border-bottom: 1px solid #6d5932;
 }
 
 .brand {
@@ -103,13 +103,14 @@ a {
   color: #e9e6df;
   cursor: pointer;
   font-size: 13px;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
 
 .language-switch button:hover,
 .language-switch button[aria-pressed="true"] {
   color: var(--gold-light);
   border-color: #6f5a32;
+  background: rgb(196 163 90 / 8%);
 }
 
 .hero {
@@ -167,12 +168,12 @@ a {
   width: min(100%, 490px);
   margin: 38px auto 0;
   padding: 24px;
-  border: 1px solid var(--border);
+  border: 1px solid #443a27;
   border-top: 2px solid var(--gold);
   border-radius: 6px;
   background: var(--surface);
   text-align: start;
-  box-shadow: 0 12px 36px rgb(45 37 20 / 4%);
+  box-shadow: 0 12px 36px rgb(0 0 0 / 18%);
 }
 
 .contact-card h3 {
